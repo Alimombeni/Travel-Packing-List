@@ -21,7 +21,7 @@ return(
         <Logo/>
         <Form AddHandleItem={handleAddItems}/>
         <PackingList items={items} onDeleteItem={handelDeleteItem} onToggleHandle={handleToggleItem}/>
-        <Stats/>
+        <Stats items={items}/>
     </div>
   );
 }
