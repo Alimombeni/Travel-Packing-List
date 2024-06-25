@@ -1,10 +1,10 @@
 import Item from "./Item";
 
-function PackingList ({dataItem}) {
+function PackingList ({  items}) {
     return(
         <div className='list'>
         <ul>
-            {dataItem.map((item)=> (<Item item={item} key={item.id}/>) )}
+            {items.map((item)=> (<Item item={item} key={item.id}/>) )}
 
         </ul>
 

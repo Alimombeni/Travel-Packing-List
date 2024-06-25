@@ -10,7 +10,7 @@ function Item ({item}) {
             {close && (
                 <li>
                     <span style={item.packed ? {textDecoration:'line-through'}:{}}>
-                        {item.quantity}
+                        {item.quantity}-
                         {item.description}
                         </span>
                     <button onClick={()=> setClose(!close)}>❌</button>

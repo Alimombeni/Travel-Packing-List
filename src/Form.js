@@ -1,15 +1,16 @@
 import {useState} from "react";
 
-function Form (){
+function Form ({AddHandleItem}){
 
     const [description , setDescription] =useState('')
     const [quantity,setQuantity]=useState()
+
 function handleSubmit (e) {
     e.preventDefault()
 
 if (!description) return;
-    const newItem = {description,quantity,packed: false ,id:new Date()}
-    console.log(newItem)
+    const newItem = {description,quantity,packed: false ,id:Date.now()}
+    AddHandleItem(newItem)
     setQuantity(1)
     setDescription('')
 }
